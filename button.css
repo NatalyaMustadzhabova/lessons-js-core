@@ -1,0 +1,124 @@
+:root {
+    --background-color-blue: #459DF5;
+    --background-color-white: #FFFFFF;
+    --background-color-purple: #8055FF;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 36rem;
+    height: 23.5rem;
+    gap: 8rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem dashed var(--background-color-purple);
+    box-sizing: border-box;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.block_big {
+    gap: 1.7rem;
+}
+
+.block_small {
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.gap-big {
+    gap: 3rem;
+}
+
+.gap-small {
+    gap: 2.5rem;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.25rem;
+    border: none;
+    position: absolute;
+}
+
+.text_color_white {
+    color: var(--background-color-white);
+}
+
+.text_color_blue {
+    color: var(--background-color-blue);
+}
+
+.button_color_blue {
+    background-color: var(--background-color-blue);
+}
+
+.button_color_white {
+    background-color: var(--background-color-white);
+}
+
+.text {
+    font-family: 'Ubuntu', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+}
+
+.button_medium_icon_text {
+    width: 7rem;
+    height: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    gap: 0.5rem;
+}
+
+.button_medium_text {
+    width: 5.5rem;
+    height: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    gap: 0.5rem;
+}
+
+.button_medium_icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.button_small_icon_text {
+    width: 5.75rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem 0.25rem;
+    gap: 0.5rem;
+}
+
+.button_small_text {
+    width: 4.5rem;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.button_small_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    fill: #23a030;
+}
+
+.image-size {
+    width: 1rem;
+}
+
+.image_color_white {
+    fill: var(--background-color-white);
+}
+
+.image_color_blue {
+    fill: var(--background-color-blue);
+}
+
