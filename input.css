@@ -6,7 +6,7 @@
     --background-color-red: #F53152;
 }
 
-.input-wrapper {
+.input-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,57 +19,70 @@
     gap: 3.125rem;
 }
 
-.input-item {
-    width: 16rem;
-    height: 2rem;
-    background: var(--background-color-white);
-    border-radius: 0.25rem;
-    margin-top: 0.5rem;
+.input__text {
     font-family: 'Ubuntu', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.8125rem;
     line-height: 1rem;
+}
+
+.input-box__item {
+    width: 16rem;
+    height: 2rem;
+    background: var(--background-color-white);
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
     box-sizing: border-box;
     padding: 0.5rem 0.25rem 0.5rem 0.5rem;
 }
 
-.item_empty {
+.input-box__item_empty {
     border: 0.0625rem solid var(--background-color-blue);
 }
 
-.item_incorrect {
+.input-box__item_incorrect {
     border: 0.0625rem solid var(--background-color-red);
 }
 
-.item_disabled {
+.input-box__item_disabled {
     border: 0.0625rem solid var(--background-color-blue);
     background: var(--background-color-day-light-blue);
 }
 
-.input_button {
+.input-box__button {
     border: none;
     position: absolute;
     right: 0.1rem;
     top: 1.9rem;
-    width: 1.5rem;
-    height: 1.5rem;
 }
 
-.image-size {
+.input-box__button_size {
     width: 1rem;
     height: 1rem;
 }
 
-.button_color_white {
-    background-color: var(--background-color-white)
+.input-box__image {
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.9rem;
 }
 
-.position {
+.input-box__image_size {
+    width: 1rem;
+    height: 1rem;
+}
+
+.input-box_icon-position {
     position: relative;
 }
 
-.button_color_light-blue {
+.input-box__button_white {
+    background-color: var(--background-color-white)
+}
+
+.input-box__image_light-blue {
     background: var(--background-color-day-light-blue);
 }
 

@@ -19,6 +19,9 @@
 
 .checkbox {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .checkbox__area {
@@ -39,20 +42,9 @@
 .checkbox__area:checked {
     background-color: var(--background-color-blue);
     border-color: var(--background-color-blue);
+    background-image: url(image/checkmark.svg)
 }
 
-.checkbox__area:checked + .checkbox__icon {
+.checkbox__area:checked {
     opacity: 1;
 }
-
-.checkbox__icon {
-    position: absolute;
-    opacity: 0;
-    left: 0;
-    right: 0;
-    width: 1rem;
-    fill: var(--background-color-white);
-    transition: opacity 0.25s ease-in;
-}
-
-
