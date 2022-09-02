@@ -1,4 +1,4 @@
-root {
+:root {
     --background-color-blue: #459DF5;
     --background-color-white: #FFFFFF;
     --background-color-purple: #8055FF;
@@ -9,7 +9,7 @@ root {
     flex-wrap: wrap;
     width: 36rem;
     height: 23.5rem;
-    gap: 8rem;
+    gap: 3rem;
     border-radius: 0.3125rem;
     border: 0.0625rem dashed var(--background-color-purple);
     box-sizing: border-box;
@@ -18,44 +18,36 @@ root {
 .block {
     display: flex;
     flex-direction: column;
-    gap: 1.7rem;
-
-}
-
-.block__item {
-    display: flex;
-    flex-direction: column;
     margin-top: 3rem;
     margin-left: 3rem;
-}
-
-.gap-big {
-    gap: 3rem;
+    gap: 1.7rem;
 }
 
 .gap-small {
-    gap: 2.5rem;
+    margin-top: 3rem;
 }
 
-.block__button {
+.button {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    margin-bottom: 1rem;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
     border-radius: 0.25rem;
-    border: none;
-    position: absolute;
+    /* padding: 0.5rem 1rem; */
+    /* gap: 0.5rem; */
+    border: none; 
+    box-sizing: border-box;
 }
 
-.block__button_color-blue {
+.button_color-blue {
     background-color: var(--background-color-blue);
 }
 
-.block__button_color-white {
+.button_color-white {
     background-color: var(--background-color-white);
 }
 
-.block__text {
+.button__text {
     font-family: 'Ubuntu', serif;
     font-style: normal;
     font-weight: 400;
@@ -63,41 +55,40 @@ root {
     line-height: 1rem;
 }
 
-.block__text__color-white {
+.button__text_color-white {
     color: var(--background-color-white);
 }
 
-.block__text_color-blue {
+.button__text_color-blue {
     color: var(--background-color-blue);
 }
 
-.block__button_size-big {
+.button_size-big {
     padding: 0.5rem 1rem 0.5rem 1rem;
     gap: 0.5rem;
 }
 
-.block__button_padding-big {
+.button_area-big {
     padding: 0.5rem;
 }
 
-.block__button_size-small {
+.button_size-small {
     padding: 0.25rem 0.5rem 0.25rem;
     gap: 0.5rem;
 }
 
-.block__button_padding-small {
+.button_area-small {
     padding: 0.25rem;
 }
 
-.block__image_size {
+.button__icon_size-small {
     width: 1rem;
 }
 
-.block__image_color-white {
+.button__icon_color-white {
     fill: var(--background-color-white);
 }
 
-.block__image_color-blue {
+.button__icon_color-blue {
     fill: var(--background-color-blue);
 }
-

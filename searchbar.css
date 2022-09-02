@@ -37,10 +37,6 @@
     background-size: auto 40%;
 }
 
-.searchbar_icon-position {
-    position: relative;
-}
-
 .searchbar__button {
     border: none;
     position: absolute;
@@ -50,20 +46,24 @@
     height: 1.5rem;
 }
 
-.searchbar__button_white {
+.searchbar__button_color-white {
     background-color: var(--background-color-white)
 }
 
-.searchbar__image_size {
-    width: 1rem;
-    height: 1rem;
-}
-
-.searchbar__image {
+.searchbar__icon {
     border: none;
     position: absolute;
     right: 0.4rem;
     top: 0.2rem;
+}
+
+.searchbar__icon-position {
+    position: relative;
+}
+
+.searchbar__icon_size-small {
+    width: 1rem;
+    height: 1rem;
 }
 
 input::-webkit-input-placeholder {

@@ -18,9 +18,11 @@
 }
 
 .radio-button {
+    appearance: none;
     width: 1rem;
     height: 1rem;
     position: relative;
+    margin: 0;
 }
 
 .radio-button:checked:after {

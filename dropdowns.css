@@ -26,6 +26,12 @@ input:checked + span {
     color: var(--background-color-blue);
 }
 
+.dropdown {
+    background: var(--background-color-white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 .dropdown__text {
     font-family: 'Ubuntu', serif;
     font-style: normal;
@@ -34,29 +40,24 @@ input:checked + span {
     line-height: 1rem;
 }
 
-.checkbox__text_padding-second:first-child {
+.dropdown__text_area-second:first-child {
     margin-top: 0.5rem;
 }
 
-.checkbox__text_padding-first {
+.dropdown__text_area-first {
     padding: 0.5rem 0 0.5rem 0;
 }
 
-.checkbox__text_padding-second {
+.dropdown__text_area-second {
     padding: 0.5rem 0 0.5rem 1rem;
 }
 
-.checkbox__text_padding-third {
+.dropdown__text_area-third {
     padding: 1rem 1rem 0.5rem 1rem;
 }
 
-.dropdown {
-    background: var(--background-color-white);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
 
-.dropdown_margin {
+.dropdown__item {
     margin-top: 3rem;
 }
 
@@ -104,7 +105,7 @@ input:checked + span {
     position: relative;
 }
 
-.dropdown__item_left-padding {
+.dropdown__label_size-small {
     padding-left: 1rem;
 }
 
@@ -142,10 +143,3 @@ input::-webkit-input-placeholder {
     margin: 0.25rem 1rem 0.25rem 1rem;
 }
 
-.block__image_color-white {
-    fill: var(--background-color-white);
-}
-
-.block__image_color-blue {
-    fill: var(--background-color-blue);
-}
