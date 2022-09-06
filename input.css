@@ -6,7 +6,7 @@
     --background-color-red: #F53152;
 }
 
-.input-box {
+.input-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,15 +17,18 @@
     border: 0.0625rem dashed var(--background-color-purple);
     box-sizing: border-box;
     gap: 3.125rem;
-    font-family: 'Ubuntu', serif;
+}
+
+.input-box {
+    position: relative;
 }
 
 .input-box__text {
-    /* font-family: 'Ubuntu', serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 0.8125rem;
     line-height: 1rem;
+    font-family: 'Ubuntu', serif;
 }
 
 .input-box__item {
@@ -36,6 +39,11 @@
     margin-top: 0.5rem;
     box-sizing: border-box;
     padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    font-family: 'Ubuntu', serif;
 }
 
 .input-box__item_empty {
@@ -68,10 +76,6 @@
 .input-box__icon_size-small {
     width: 1rem;
     height: 1rem;
-}
-
-.input-box__icon-position {
-    position: relative;
 }
 
 .input-box__button_color-white {
