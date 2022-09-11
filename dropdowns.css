@@ -78,7 +78,6 @@ input:checked + span {
 .dropdown__label {
     display: flex;
     align-items: center;
-    width: 9rem;
     height: 2rem;
     position: relative;
 }
