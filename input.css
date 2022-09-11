@@ -1,0 +1,92 @@
+:root {
+    --background-color-white: #FFFFFF;
+    --background-color-day-light-blue: #BAD8F5;
+    --background-color-blue: #459DF5;
+    --background-color-purple: #8055FF;
+    --background-color-red: #F53152;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22.625rem;
+    height: 22.5rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem dashed var(--background-color-purple);
+    box-sizing: border-box;
+    gap: 3.125rem;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    font-family: 'Ubuntu', serif;
+}
+
+.input-box__item {
+    width: 16rem;
+    height: 2rem;
+    background: var(--background-color-white);
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    font-family: 'Ubuntu', serif;
+}
+
+.input-box__item_empty {
+    border: 0.0625rem solid var(--background-color-blue);
+}
+
+.input-box__item_incorrect {
+    border: 0.0625rem solid var(--background-color-red);
+}
+
+.input-box__item_disabled {
+    border: 0.0625rem solid var(--background-color-blue);
+    background: var(--background-color-day-light-blue);
+}
+
+.input-box__button {
+    border: none;
+    position: absolute;
+    right: 0.1rem;
+    top: 1.9rem;
+}
+
+.input-box__icon {
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.9rem;
+}
+
+.input-box__icon_size-small {
+    width: 1rem;
+    height: 1rem;
+}
+
+.input-box__button_color-white {
+    background-color: var(--background-color-white)
+}
+
+.input-box__icon_color-light-blue {
+    background: var(--background-color-day-light-blue);
+}
+
+input::-webkit-input-placeholder {
+    color: var(--background-color-day-light-blue);
+}
+
